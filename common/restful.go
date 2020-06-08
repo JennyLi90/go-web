@@ -4,6 +4,6 @@ import (
 	"net/http"
 )
 //Run start server
-func Run(){
-	http.ListenAndServe(":8080", nil)
+func Run() error {
+	return http.ListenAndServe(":8080", nil)
 }
